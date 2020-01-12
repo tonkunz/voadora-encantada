@@ -1,23 +1,26 @@
+
 .voadora-header {
   display: flex;
-  height: 400px;
+  height: 460px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-
-  background-size: inherit;
-  background: url(/assets/svg/coqueiros.svg) no-repeat center,
-              linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-
-  /* background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94'); */
+  background: url('/assets/svg/coqueiros.svg#opacity') no-repeat center,
+              linear-gradient(30deg, #FF44F3 0%, #F8BD94 80%),
+  -webkit-linear-gradient(30deg, #FF44F3 0%, #F8BD94 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94');
+  background-size: cover;
 }
 
-/* Header logo */
+/* Header logo e assinatura */
+.logo-assinatura {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   height: 150px;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
 }
 
 .logo:hover {
@@ -25,15 +28,14 @@
 }
 
 .assinatura {
-  height: 45px;
-}
-
-.logo-assinatura {
-  display: flex;
-  flex-direction: column;
+  height: 50px;
 }
 
 /* Social media nav links */
+.nav-links {
+  margin-top: 1.5rem;
+}
+
 .media-link {
   color: #fff;
   font-size: 1rem;
@@ -51,12 +53,14 @@
   transform: scale(1.5)
 }
 
+/* Custom Buttom */
 .button-group {
   display: flex;
+  margin-bottom: 0.75rem;
 }
 
-/* Custom Buttom */
 .super-button {
+  font-family: 'Alata', sans-serif;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -79,6 +83,7 @@
 
 .super-button:hover {
   animation: rotate 0.7s ease-in-out both;
+  background: rgba(255, 255, 255, 0.35);
 }
 .super-button:hover span {
   animation: storm 0.7s ease-in-out both;
