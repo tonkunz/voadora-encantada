@@ -5,14 +5,15 @@
   justify-content: space-around;
   flex-direction: column;
 
-  background:
-    url('/src/assets/svg/coqueiros.png') no-repeat left top,
-    linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  /* background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top;
+  /* background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top, linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%); */
+
+  background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top;
+
   background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
   background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
   background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94'); */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94');
+
 }
 
 .sociais {
@@ -48,4 +49,54 @@
   font-size: 1rem;
   margin-right: 5px;
   text-decoration: none;
+}
+
+.button-group {
+  display: flex;
+}
+
+/* Custom Buttom */
+.super-button {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 175px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin: 1em 2em;
+
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.super-button span {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.super-button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+.super-button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0deg) translate3d(0, 0, 0) }
+  25%  { transform: rotate(3deg) translate3d(0, 0, 0) }
+  50%  { transform: rotate(-3deg) translate3d(0, 0, 0) }
+  75%  { transform: rotate(1deg) translate3d(0, 0, 0) }
+  100% { transform: rotate(0deg) translate3d(0, 0, 0) }
+}
+
+@keyframes storm {
+  0%   { transform: translate3d( 0, 0, 0) translateZ(0) }
+  25%  { transform: translate3d( 4px, 0, 0) translateZ(0) }
+  50%  { transform: translate3d( -3px, 0, 0) translateZ(0) }
+  75%  { transform: translate3d( 2px, 0, 0) translateZ(0) }
+  100% { transform: translate3d( 0, 0, 0) translateZ(0) }
 }
