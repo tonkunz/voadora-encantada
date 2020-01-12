@@ -5,27 +5,16 @@
   justify-content: space-around;
   flex-direction: column;
 
-  /* background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top, linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%); */
+  background-size: inherit;
+  background: url(/assets/svg/coqueiros.svg) no-repeat center,
+              linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
 
-  background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top;
-
+  /* background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
   background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94');
-
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94'); */
 }
 
-.sociais {
-  font-size: 1.5em;
-  margin: 0 0.3em;
-  transition: transform .1s;
-}
-
-.sociais:hover {
-  transform: scale(1.5)
-}
-
+/* Header logo */
 .logo {
   height: 150px;
   transition: transform .2s; /* Animation */
@@ -44,11 +33,22 @@
   flex-direction: column;
 }
 
+/* Social media nav links */
 .media-link {
   color: #fff;
   font-size: 1rem;
   margin-right: 5px;
   text-decoration: none;
+}
+
+.sociais {
+  font-size: 1.5em;
+  margin: 0 0.3em;
+  transition: transform .1s;
+}
+
+.sociais:hover {
+  transform: scale(1.5)
 }
 
 .button-group {
