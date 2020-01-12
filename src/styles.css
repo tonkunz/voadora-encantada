@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+body {
+  font-family: 'Alata', sans-serif;
+  margin: 0;
+}
+
+.voadora-bg {
+  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94');
+}
+
+/*
+  Paleta de cores
+  #FF44F3 / #F8BD94
+*/

@@ -1,0 +1,51 @@
+.voadora-header {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  background:
+    url('/src/assets/svg/coqueiros.png') no-repeat left top,
+    linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  /* background-image: url('/src/assets/svg/coqueiros.svg') no-repeat left top;
+  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  background: -webkit-linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  background: linear-gradient(60deg, #FF44F3 0%, #F8BD94 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF44F3', endColor='#F8BD94'); */
+}
+
+.sociais {
+  font-size: 1.5em;
+  margin: 0 0.3em;
+  transition: transform .1s;
+}
+
+.sociais:hover {
+  transform: scale(1.5)
+}
+
+.logo {
+  height: 150px;
+  transition: transform .2s; /* Animation */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.assinatura {
+  height: 45px;
+}
+
+.logo-assinatura {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-link {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 5px;
+  text-decoration: none;
+}

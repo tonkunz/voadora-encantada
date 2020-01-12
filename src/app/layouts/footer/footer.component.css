@@ -1,0 +1,12 @@
+.voadora-footer {
+  display: flex;
+  height: 3em;
+  background: #FF88C0;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item {
+  color: #FFF;
+  font-weight: bold;
+}
